@@ -1,0 +1,128 @@
+{
+    "version": 8,
+    "name": "Blank",
+    "metadata": {
+        "mapbox:autocomposite": true,
+        "mapbox:type": "template",
+        "mapbox:sdk-support": {
+            "js": "0.45.0",
+            "android": "6.0.0",
+            "ios": "4.0.0"
+        }
+    },
+    "center": [
+        -77.02073889941187,
+        38.88323161102511
+    ],
+    "zoom": 12,
+    "bearing": 0,
+    "pitch": 0,
+    "sources": {
+        "composite": {
+            "url": "mbtiles://{v3}",
+            "type": "vector"
+        }
+    },
+    "glyphs": "{fontstack}/{range}.pbf",
+    "layers": [
+        {
+            "id": "background",
+            "type": "background",
+            "metadata": {},
+            "paint": {
+                "background-color": "hsla(109, 0%, 100%, 0)"
+            }
+        },
+        {
+            "id": "barrier-line",
+            "type": "line",
+            "metadata": {},
+            "source": "composite",
+            "source-layer": "barrier_line",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": "hsl(0, 0%, 100%)"
+            }
+        },
+        {
+            "id": "road",
+            "type": "line",
+            "metadata": {},
+            "source": "composite",
+            "source-layer": "road",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "line-color": [
+                    "interpolate",
+                    [
+                        "linear"
+                    ],
+                    [
+                        "zoom"
+                    ],
+                    0,
+                    "hsl(0, 0%, 100%)",
+                    22,
+                    "hsl(0, 0%, 100%)"
+                ]
+            }
+        },
+        {
+            "id": "water",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "water",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "hsl(0, 0%, 100%)"
+            }
+        },
+        {
+            "id": "landuse-overlay",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "landuse_overlay",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "hsla(0, 0%, 100%, 0.22)"
+            }
+        },
+        {
+            "id": "landuse",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "landuse",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "hsla(0, 0%, 100%, 0.23)"
+            }
+        },
+        {
+            "id": "building",
+            "type": "fill",
+            "source": "composite",
+            "source-layer": "building",
+            "layout": {
+                "visibility": "visible"
+            },
+            "paint": {
+                "fill-color": "hsla(0, 0%, 100%, 0.72)"
+            }
+        }
+    ],
+    "created": "2018-05-21T19:21:10.229Z",
+    "id": "mapboxwhite",
+    "modified": "2018-05-21T19:29:52.925Z",
+    "owner": "red545",
+    "draft": false
+}

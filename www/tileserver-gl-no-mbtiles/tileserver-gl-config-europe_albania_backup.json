@@ -1,0 +1,44 @@
+{
+   "options" : {
+     "maxScaleFactor": 10,
+     "maxSize": 2560,
+      "paths" : {
+         "root" : "/usr/src/app/node_modules/tileserver-gl-styles",
+         "fonts" : "/createlab/fonts",
+         "styles" : "/createlab/styles",
+         "mbtiles" : "/createlab/mbtiles"
+      }
+   },
+   "styles" : {
+
+      "grafo" : {
+         "style" : "minimal-grafo/style.json",
+         "tilejson" : {
+            "bounds" : [19.13709, 39.59972, 21.06846, 42.66562 ]
+         }
+      },
+      "yourmap-blue" : {
+         "style" : "yourmap-blue/style_local_dark_light_sea.json",
+         "tilejson" : {
+            "bounds" : [19.13709, 39.59972, 21.06846, 42.66562 ]
+         }
+      },
+      "yourmap-transparent-dark" : {
+         "style" : "yourmap-blue/style_local_dark.json",
+         "tilejson" : {
+            "bounds" : [19.13709, 39.59972, 21.06846, 42.66562 ]
+         }
+      },
+      "yourmap-transparent-white" : {
+         "style" : "yourmap-blue/style_local_white.json",
+         "tilejson" : {
+            "bounds" : [19.13709, 39.59972, 21.06846, 42.66562 ]
+         }
+      }
+   },
+   "data" : {
+      "v3" : {
+         "mbtiles" : "output.mbtiles"
+      }
+   }
+}

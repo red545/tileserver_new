@@ -1,0 +1,39 @@
+{
+  "options" : {
+	"maxScaleFactor": 15,
+	"minRendererPoolSize": [1],
+	"maxRendererPoolSize": [1],
+"maxSize": 5120,
+     "formatEncoding": {
+      "png": 6,
+      "jpeg": 80,
+      "pngQuantization": false,
+      "webp": 90
+    }
+  },
+   "styles" : {
+     "white" : {
+        "style" : "styles/yourmap-blue/white.json",
+        "tilejson" : {
+           "bounds" : [-180, -85.0511, 180, 85.0511]
+        }
+     },
+      "darklight" : {
+         "style" : "styles/yourmap-blue/darkLight.json",
+         "tilejson" : {
+            "bounds" : [-180, -85.0511, 180, 85.0511]
+         }
+      },
+     "red" : {
+       "style" : "styles/yourmap-blue/red.json",
+       "tilejson" : {
+         "bounds" : [-180, -85.0511, 180, 85.0511]
+       }
+     }
+   },
+   "data" : {
+      "v3" : {
+         "mbtiles" : "mbtiles/output.mbtiles"
+      }
+   }
+}
